@@ -29,7 +29,8 @@ namespace InventoryManagement
         services.AddScoped<IProductRepository, ProductRepository>();
         services.AddScoped<ICategoryRepository, CategoryRepository>();
         services.AddScoped<ISupplierRepository, SupplierRepository>();
-
+        
+        services.AddScoped<IInventoryStatisticsService, InventoryStatisticsService>();
         // 📦 Реєстрація ViewModel для DI
         services.AddTransient<CategoryViewModel>();
         services.AddTransient<ProductViewModel>();
